@@ -2,7 +2,6 @@
 session_start();
 require_once('connect.php');
 
-// Check if the connection was successful
 if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -27,7 +26,6 @@ if (mysqli_num_rows($checkResult) > 0) {
     echo "<script>window.location.href = 'habitica-home.php';</script>";
 
 } else {
-    // User does not exist, redirect to login page
     echo "<script>alert('Invalid email or password.');</script>";
     echo "<script>window.location.href = 'habitica.html';</script>";
     exit();

@@ -6,7 +6,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['task_name'])) {
     // Retrieve the task name from the URL parameter
     $taskName = $_GET['task_name'];
 
-    // Delete the task from the database
     $sql = "DELETE FROM tasks WHERE task_name = '$taskName'";
 
     if ($con->query($sql) === TRUE) {
@@ -18,6 +17,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['task_name'])) {
     }
 }
 
-// Close the database connection
 $con->close();
 ?>
