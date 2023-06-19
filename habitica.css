@@ -1,0 +1,233 @@
+/* Navbar */
+nav{
+    background-color: #280967;
+}
+
+#log-in {
+    margin-left: 700px;
+    padding: 7px 28px;
+    border-radius: 15px;
+    color: white;
+}
+
+#log-out {
+    margin-left: 750px;
+    padding: 7px 28px;
+    border-radius: 15px;
+    color: white;
+}
+
+/* first-half */
+.first-half {
+    display: flex;
+    flex-direction: row;
+}
+
+.half-left{
+    width: 50%;
+    padding-left: 140px;
+    padding-top: 50px;
+}
+
+.half-left h1{
+    margin-top: 20px;
+    width: 450px;
+}
+
+.half-right{
+    padding: 80px 100px;
+    width: 50%;
+    text-align: center;
+}
+
+#sign-up input{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input {
+    display: block;
+    height: 35px;
+    margin: 15px 0;
+    background-color:#280967;
+    border-color: #280967;
+    color: white;
+    border: 0;
+    padding: 10px;
+}
+
+.btn{
+    background-color: #8563E9;
+    border-color: #8563E9;
+}
+
+#sign-up{
+    margin-top: 30px;
+}
+
+#btn-sign-up {
+    border-radius: 30px;
+    padding: 7px 30px;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn-todo{
+    background-color: #CC0F31;
+    color: white;
+    margin: 10px   auto;
+    border-radius: 55px;
+    padding: 20px;
+    width: 100%;
+    border-color:#CC0F31;
+}
+
+/* second half */
+.second-half {
+    margin-top: 155px;
+}
+
+.upper-half {
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+}
+
+.lower-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    text-align: center;
+}
+
+.pic img{
+    width: 245px;
+    height: 240px;
+    margin-bottom: 15px;
+}
+
+#pic1, #pic2, #pic3{
+    width: 33%;
+    padding: 10px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .half-left, .half-right, .upper-half{
+        width: 100%;
+        padding: 30px;
+    }
+    #pic1, #pic2, #pic3{
+        width: 100%;
+    }
+    .half-left h1{
+        width: 80%;
+        margin:20px auto;
+    }
+    .half-left img{
+        width: 100%;
+        height: 70%;
+    }
+    .second-half{
+        margin-top: 50px;
+    }
+}
+
+/* modal */
+#modal-login {
+    width: 70%;
+    margin: auto;
+}
+
+#modal-login input{
+    width: 100%;
+    color: black;
+}
+
+.modal-header, .modal-footer{
+    background-color: #8054D8;
+}
+
+.modal-body{
+    background-color: #c6a9ff;
+}
+
+#modal-add-todo{
+    width: 70%;
+    margin: auto;
+} 
+
+#modal-add-todo input{
+    display: inline;
+    color: black;
+} 
+
+.modal-content input, textarea{
+    background-color: white;
+    width: 100%;
+}
+
+/* carousel */
+.carousel {
+    margin-bottom: 20px;
+}
+
+.carousel-inner img{
+    height: 400px;
+}
+
+/* card */
+.card {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    border: groove;
+}
+
+.card:hover{
+    background-color: #e1d3fd;
+}
+
+h5.card-title.text-center {
+    margin-top: 20px;
+}
+
+div.col-md-4 img {
+    margin-left: 10%;
+    margin-top: 10px;
+    width: 60%;
+}
+
+div#card-child-left.card {
+    margin-left: 10%;
+}
+div#card-child-right.card {
+    margin-right: 10%;
+}
+
+.form-control {
+    margin: 0;
+}
+
+footer {
+    background-color: #280967;
+    padding: 45px;
+    margin-top: 150px;
+    color: white;
+}
+
+footer .col-md-6 p {
+    text-align: justify;
+}
+
+footer .row {
+    justify-content: center;
+}
+  

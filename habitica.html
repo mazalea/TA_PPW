@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="habitica.css" rel="stylesheet">
+    <style>
+      body {
+        background-image: url(img/bg.png);
+        background-size: cover;
+        color: white;
+      }
+    </style>
+    <title>Habitica - Gamify Your Life</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo-removebg-preview.png" alt="Habitica" width="220" height="75"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://habitica.com/static/features">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://habitica.com/static/community-guidelines">Community</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://habitica.com/static/faq">FAQ</a>
+        </li>
+        <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="log-in">Log In</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" id="modal-login">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">LOGIN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="login.php">
+          <input type="email" name="email-lg" placeholder="E-mail">
+          <input type="password" name="password-lg" placeholder="Password">
+          <button type="submit" class="btn" id="btn-sign-up">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- first half -->
+<div class="first-half">
+  <div class="half-left">
+    <img alt="battling-monster" src="img/main-pic.png" width="388" height="318">
+    <h1>Motivate yourself to achieve your goal.</h1>
+  </div>
+  
+  <div class="half-right">
+    <h3>Sign Up For Free</h3>
+    <form method="post" action="signup.php" id="sign-up">
+      <input type="text" name="username" placeholder="Name" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <p>By clicking the button below, you are indicating that you have read and agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+      <button type="submit" class="btn" id="btn-sign-up">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+<!-- second half -->
+<div class="second-half">
+  <div class="upper-half">
+    <h2>Gamify Your Life</h2>
+    <p>Habitica is a free habit-building and productivity app that treats your real life like a game. With in-game rewards and punishments to motivate you and a strong social network to inspire you, Habitica can help you achieve your goals to become healthy, hard-working, and happy.</p>
+  </div>
+
+  <div class="lower-half">
+    <div class="pic" id="pic1">
+      <img alt="health-and-fitness" src="img/health.png">
+      <h4>Health and Fitness</h4>
+      <p>Never motivated to floss? Can't seem to get to the gym? Habitica finally makes it fun to get healthy.</p>
+    </div>
+    
+    <div class="pic" id="pic2">
+      <img alt="school-and-work" src="img/study-work.png">
+      <h4>Study and Work</h4>
+      <p>Whether you're preparing a report for your teacher or your boss, it's easy to keep track of your progress as you tackle your toughest tasks.</p>
+    </div>
+
+    <div class="pic" id="pic3">
+      <img alt="many-more" src="img/many-more.png">
+      <h4>And much, much more!</h4>
+      <p>Our fully customizable task list means that you can shape Habitica to fit your personal goals. Work on creative projects, emphasize self-care, or pursue a different dream -- it's all up to you.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>About Our Website</h4>
+        <p>Habitica is a free online productivity and habit-building platform that turns your real-life tasks and goals into an enjoyable game. It combines elements of a task manager, habit tracker, and role-playing game to help you stay motivated and develop positive habits.
+          With Habitica, you can create a customized avatar, set up your to-do list, daily habits, and recurring tasks. As you complete your tasks and build positive habits, you earn experience points, collect rewards, and level up your character.
+          Habitica also offers a social aspect, allowing you to join or create groups, participate in challenges, and engage in friendly competition with friends and other Habitica users. You can collaborate on tasks, support each other's progress, and celebrate achievements together.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://habitica.wordpress.com/">Blog</a></li>
+          <li><a href="https://habitica.fandom.com/wiki/Habitica_Wiki">Wiki</a></li>
+          <li><a href="https://habitica.fandom.com/wiki/Whats_New_2023">News</a></li>
+          <li><a href="https://habitica.com/static/faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Contact Us</h4>
+        <p>Report Account Problems :  <a href="#">admin@habitica.com</a></p>
+        <p>Report a Bug :  <a href="#">admin@habitica.com</a></p>
+        <p>Subscription and Payment Issues :  <a href="#">admin@habitica.com</a></p>
+        <p>General Questions about the Site :  <a href="#">Habitica Help Guild</a></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="text-center">&copy; 2023 Habitica. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>
